@@ -93,10 +93,10 @@ class ArticlesController extends AppController
             $article->user_id = $this->request->getAttribute('identity')->getIdentifier();
 
             if ($this->Articles->save($article)) {
-                $this->Flash->success(__('Your article has been saved.'));
+                $this->Flash->success(__('Your story has been saved.'));
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('Unable to add your article.'));
+            $this->Flash->error(__('Unable to publish your story.'));
         }
         $tags = $this->Articles->Tags->find('list');
         $this->set(compact('article', 'tags'));
@@ -117,10 +117,10 @@ class ArticlesController extends AppController
                 'accessibleFields' => ['user_id' => false]
             ]);
             if ($this->Articles->save($article)) {
-                $this->Flash->success(__('Your article has been updated.'));
+                $this->Flash->success(__('Your story has leveled up.'));
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('Unable to update your article.'));
+            $this->Flash->error(__('Unable to update your story.'));
         }
         $tags = $this->Articles->Tags->find('list');
         $this->set(compact('article', 'tags'));

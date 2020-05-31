@@ -14,12 +14,6 @@ h1{
 }
 
 
-/* .grid-container{
-    display:grid; 
-    grid-column-gap: 50px; 
-    color: blue; 
-} */
-
 .grid{
     display: grid; 
     place-items: center center; 
@@ -46,70 +40,17 @@ h1{
     padding-right: 30px; 
 }
 
-/* .testing{
-    display: block; 
-    width: 200px;
-    height: 200px;
-    vertical-align: middle;
-    text-align: center;
-    margin: 100px;
-    font-size: 40px; 
-    font-weight:bold;
-    color: #000000; 
-    float: left;
-    background: blue; 
-
-} */
-
-
-
-/* a.link{
-    text-decoration: none;
-    background-color: #A6E6E9;
-    padding: 10px 20px;
-    border-radius: 25px; 
-    margin:0 10px; 
+.navbar-brand{
+    font-weight: bold; 
 }
-
-.square{
-    width: 200px;
-    height: 200px;
-    background-color: #A6E6E9;
-    text-align: center; 
-    vertical-align: middle; 
-    padding-top: 50px; 
-    margin: 50px; 
-    /* float: left;  */
-/* } */
-/* 
-.square2{
-    width: 200px;
-    height: 200px;
-    background-color: #A6E6E9;
-    text-align: center; 
-    vertical-align: middle; 
-    padding-top: 70px; 
-    margin: 50px; 
-    /* float: left;  
-} */
 
 .btn-info{
     background-color: #A6E6E9;
     color: black;
+    font-weight: bold; 
 }
 
-/* .btn-info{
-    display: block; 
-    width: 200px;
-    height: 200px;
-    vertical-align: middle;
-    text-align: center;
-    margin: 100px;
-    font-size: 40px; 
-    font-weight:bold;
-    color: #000000; 
-    float: left;
-} */
+
 
 #writing{
     padding-top: 25px; 

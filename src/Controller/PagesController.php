@@ -22,6 +22,12 @@ use Cake\Http\Exception\NotFoundException;
 use Cake\Http\Response;
 use Cake\View\Exception\MissingTemplateException;
 
+use Authentication\AuthenticationService;
+use Authentication\AuthenticationServiceInterface;
+use Authentication\AuthenticationServiceProviderInterface;
+use Authentication\Middleware\AuthenticationMiddleware;
+use Psr\Http\Message\ServerRequestInterface;
+
 use Authorization\AuthorizationService;
 use Authorization\AuthorizationServiceInterface;
 use Authorization\AuthorizationServiceProviderInterface;
@@ -56,6 +62,7 @@ class PagesController extends AppController
     
     public function display(...$path): ?Response
     {
+
         $this->Authorization->skipAuthorization();
         if (!$path) {
             return $this->redirect('/');

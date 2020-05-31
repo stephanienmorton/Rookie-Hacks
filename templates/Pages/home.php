@@ -58,20 +58,21 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <
 </head>
 <body>
+
     
     <main class="main">
  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand" href="#">Creative Corner</a>
+  <a class="navbar-brand" >CC</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-right">
       <li class="nav-item active">
-        <a class="nav-link navbar-right" href="#">Sign In <span class="sr-only">(current)</span></a>
+        <a class="nav-link navbar-right" href="users\logout">Sign Out <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Sign Up</a>
+        <a class="nav-link" href="users\add">New User</a>
       </li>
     </ul>
   </div>
@@ -89,7 +90,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             <p> Mundane fantastic: describe a completely normal object or scenario in a new perspective. Find beauty in places you might not expect!</p>
             </div>
             <div id = "writing">
-            <a href="#" style="text-decoration:none" class="btn btn-dark btn-lg" role="button" aria-pressed="true">Start Writing</a>
+            <!-- <?php $link_name = "Start Writing"; ?> -->
+            <a href="Articles\add" style="text-decoration:none" class="btn btn-dark btn-lg" role="button" aria-pressed="true">Start Writing</a>
             <p id="warning"> IF YOU ARE NOT SIGNED IN YOUR STORY<br> WILL NOT BE SAVED</p>
           </div> 
         </div>
@@ -101,7 +103,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <a href="articles/bookshelf" style="text-decoration:none" class="btn btn-info btn-lg link btn1 button" role="button" aria-pressed="true"> Your <br> Bookshelf</a>
     </div>
     <div class="col-sm">
-    <a href="#" style="text-decoration:none" class="btn btn-info btn-lg link btn2" role="button" aria-pressed="true">Explore <br> Stories</a>
+    <a href="articles/index" style="text-decoration:none" class="btn btn-info btn-lg link btn2" role="button" aria-pressed="true">Explore <br> Stories</a>
     </div>
     <div class="col-sm">
     <a href="#" style="text-decoration:none" class="btn btn-info btn-lg link btn3" role="button" aria-pressed="true">Find <br> Community</a>

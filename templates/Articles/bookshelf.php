@@ -1,6 +1,7 @@
 <div class="explore">
 <?= $this->Html->css('index.css') ?>
 <h1>Your Stories</h1>
+<a href="/">Return to homepage</a>
 <div class="list">
 <p><?= $this->Html->link("Begin writing a new story", ['action' => 'add']) ?></p>
 <table>
