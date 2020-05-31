@@ -1,0 +1,12 @@
+.explore {
+    /* background-image: url("https://images.unsplash.com/photo-1550327149-f5aef60d38f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.list {
+    background-color: rgba(211, 246, 255, 0.8);
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}

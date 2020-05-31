@@ -1,0 +1,19 @@
+.users-form {
+    background-image: url("https://images.unsplash.com/photo-1550327149-f5aef60d38f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    background-color: rgba(163, 221, 255, 0.6);
+    padding: 20px;
+    color: black;
+}
+
+.button {
+    color: white;
+}
+
+.login-bottom {
+    display: inline;
+}

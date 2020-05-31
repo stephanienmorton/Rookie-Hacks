@@ -61,7 +61,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     
     <main class="main">
  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Creative Corner</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -98,7 +98,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <div class="grid">
   <div class="row">
     <div class="col-sm">
-    <a href="#" style="text-decoration:none" class="btn btn-info btn-lg link btn1" role="button" aria-pressed="true"> Your <br> Bookshelf</a>
+    <a href="articles/bookshelf" style="text-decoration:none" class="btn btn-info btn-lg link btn1 button" role="button" aria-pressed="true"> Your <br> Bookshelf</a>
     </div>
     <div class="col-sm">
     <a href="#" style="text-decoration:none" class="btn btn-info btn-lg link btn2" role="button" aria-pressed="true">Explore <br> Stories</a>

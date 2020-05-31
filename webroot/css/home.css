@@ -8,7 +8,7 @@ body {
 }
 
 h1{
-    color: #35B1F6;
+    color: rgb(36, 154, 218);
     font-weight: lighter;
     padding: 20px; 
 }
@@ -27,7 +27,7 @@ h1{
 
 .link{
     padding: 50px; 
-    opacity: 0.5; 
+    opacity: 0.6; 
 
 }
 
@@ -95,6 +95,7 @@ h1{
 
 .btn-info{
     background-color: #A6E6E9;
+    color: black;
 }
 
 /* .btn-info{
@@ -122,15 +123,17 @@ h1{
 
 
 h3{
-    color: black
+    color: black;
 }
 p{
     color: black
 }
 .prompt{
     padding: 40px;
-    background-color: #84D6E1; 
-    opacity: 0.4;
+    background-color: rgba(163, 237, 255, 0.6);
+    /* background-color: #84D6E1;  */
+    /* opacity: 0.4; */
+    color: black;
 }
 
 #warning{
@@ -149,4 +152,7 @@ hr {
     margin-bottom: 35px;
 }
 
+button {
+    color: black;
+}
 

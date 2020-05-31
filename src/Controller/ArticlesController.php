@@ -20,6 +20,15 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Authorization\IdentityInterface;
+use Authentication\AuthenticationService;
+use Authentication\AuthenticationServiceInterface;
+use Authentication\AuthenticationServiceProviderInterface;
+use Authentication\Middleware\AuthenticationMiddleware;
+use Psr\Http\Message\ServerRequestInterface;
+
+
+// AuthComponent::user('id');
 
 class ArticlesController extends AppController
 {
@@ -34,6 +43,29 @@ class ArticlesController extends AppController
     public function index()
     {
         $articles = $this->Paginator->paginate($this->Articles->find());
+
+        // $user = $this->Authorization->getIdentity();
+        // $userID = $user->id;
+
+        $user = $this->getRequest()->getAttribute('identity');
+        $userID = $user['id'] ?? null;
+        // $userID = 2;
+
+        $this->set(compact('articles'));
+        $this->Authorization->skipAuthorization();
+    }
+
+    public function bookshelf()
+    {
+        $articles = $this->Paginator->paginate($this->Articles->find());
+
+        // $user = $this->Authorization->getIdentity();
+        // $userID = $user->id;
+
+        $user = $this->getRequest()->getAttribute('identity');
+        $userID = $user['id'] ?? null;
+        // $userID = 2;
+
         $this->set(compact('articles'));
         $this->Authorization->skipAuthorization();
     }
