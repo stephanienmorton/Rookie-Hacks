@@ -20,6 +20,7 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Error\Debugger;
 use Cake\Http\Exception\NotFoundException;
 
+
 $this->disableAutoLayout();
 
 if (!Configure::read('debug')) :
