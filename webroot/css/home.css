@@ -1,72 +1,152 @@
 /* Home page styles */
-@font-face {
-    font-family: 'cakefont';
-    src: url('../font/cakedingbats-webfont.eot');
-    src: url('../font/cakedingbats-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../font/cakedingbats-webfont.woff2') format('woff2'),
-    url('../font/cakedingbats-webfont.woff') format('woff'),
-    url('../font/cakedingbats-webfont.ttf') format('truetype'),
-    url('../font/cakedingbats-webfont.svg#cake_dingbatsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
 body {
-    padding: 60px 0;
+    background-image: url("https://images.unsplash.com/photo-1550327149-f5aef60d38f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-header {
-    margin-bottom: 60px;
+
+h1{
+    color: #35B1F6;
+    font-weight: lighter;
+    padding: 20px; 
 }
-img {
-    margin-bottom: 30px;
+
+
+/* .grid-container{
+    display:grid; 
+    grid-column-gap: 50px; 
+    color: blue; 
+} */
+
+.grid{
+    display: grid; 
+    place-items: center center; 
 }
-h1 {
+
+.link{
+    padding: 50px; 
+    opacity: 0.5; 
+
+}
+
+.btn1{
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+.btn2{
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.btn3{
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+/* .testing{
+    display: block; 
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 100px;
+    font-size: 40px; 
+    font-weight:bold;
+    color: #000000; 
+    float: left;
+    background: blue; 
+
+} */
+
+
+
+/* a.link{
+    text-decoration: none;
+    background-color: #A6E6E9;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    margin:0 10px; 
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: #A6E6E9;
+    text-align: center; 
+    vertical-align: middle; 
+    padding-top: 50px; 
+    margin: 50px; 
+    /* float: left;  */
+/* } */
+/* 
+.square2{
+    width: 200px;
+    height: 200px;
+    background-color: #A6E6E9;
+    text-align: center; 
+    vertical-align: middle; 
+    padding-top: 70px; 
+    margin: 50px; 
+    /* float: left;  
+} */
+
+.btn-info{
+    background-color: #A6E6E9;
+}
+
+/* .btn-info{
+    display: block; 
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 100px;
+    font-size: 40px; 
+    font-weight:bold;
+    color: #000000; 
+    float: left;
+} */
+
+#writing{
+    padding-top: 25px; 
+    padding-bottom:50px; 
+}
+
+.btn-dark{
+    padding: 15px 40px; 
+    border-radius: 50px; 
+}
+
+
+h3{
+    color: black
+}
+p{
+    color: black
+}
+.prompt{
+    padding: 40px;
+    background-color: #84D6E1; 
+    opacity: 0.4;
+}
+
+#warning{
+    color: #004B76;
+    font-size: 10px; 
     font-weight: bold;
+
 }
-ul {
-    list-style-type: none;
-    margin: 0 0 30px 0;
-    padding-left: 25px;
-}
-a {
-    color: #0071BC;
-    text-decoration: underline;
-}
+
+
+
+
 hr {
     border-bottom: 1px solid #e7e7e7;
     border-top: 0;
     margin-bottom: 35px;
 }
 
-.text-center {
-    text-align: center;
-}
-.links a {
-    margin-right: 10px;
-}
-.release-name {
-    color: #D33C43;
-    font-weight: 400;
-    font-style: italic;
-}
-.bullet:before {
-    font-family: 'cakefont', sans-serif;
-    font-size: 18px;
-    display: inline-block;
-    margin-left: -1.3em;
-    width: 1.2em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    vertical-align: -1px;
-}
-.success:before {
-    color: #88c671;
-    content: "\0056";
-}
-.problem:before {
-    color: #d33d44;
-    content: "\0057";
-}
-.cake-error {
-    padding: 10px;
-    margin: 10px 0;
-}
+

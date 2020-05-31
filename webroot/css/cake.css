@@ -1,8 +1,9 @@
 /* Miligram overrides */
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 400,
 }
+
 
 .top-nav-links,
 .side-nav,
@@ -10,7 +11,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+
+h1{
+    color:#35B1F6;
+}
+
+h2, h3, h4, h5, h6 {
     font-weight: 400;
     color: #363637;
 }
@@ -54,6 +60,7 @@ th a,
 /* Main */
 body {
     background: #f5f7fa;
+    background-image: url("https://images.unsplash.com/photo-1550327149-f5aef60d38f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80");
 }
 .content {
     padding: 2rem;
