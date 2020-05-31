@@ -270,9 +270,13 @@ return [
          * in app_local.php depending on the applications needs.
          */
         'default' => [
-            'className' => Connection::class,
-            'driver' => Mysql::class,
+            'className' => 'Cake\Database\Connection',
+            'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
+            'host' => 'localhost',
+            'username' => env('DATABASE_USERNAME',null),
+            'password' => env('DATABASE_PASSWORD', null),
+            'database' => env('DATABASE_NAME', null), 
             'timezone' => 'UTC',
 
             /**
