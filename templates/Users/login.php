@@ -1,7 +1,7 @@
 <div class="users form">
     <?= $this->Html->css('login.css') ?>
     <?= $this->Flash->render() ?>
-    <h3>Login</h3>
+    <h3>Log in to Creative Corner!</h3>
     <div class="login-form">
     <?= $this->Form->create() ?>
     <fieldset>

@@ -18,6 +18,7 @@ class UsersController extends AppController
      */
     public function index()
     {
+        $this->Authorization->skipAuthorization();
         $users = $this->paginate($this->Users);
 
         $this->set(compact('users'));
@@ -129,7 +130,7 @@ class UsersController extends AppController
                 'action' => 'index',
             ]);
 
-            return $this->redirect($redirect);
+            return $this->redirect('/');
         }
         // display error if user submitted and authentication failed
         if ($this->request->is('post') && !$result->isValid()) {
